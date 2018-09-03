@@ -1,0 +1,735 @@
+﻿/* Css Principal  - ConectaMais.Site */
+
+/* RESET - Css Padrao */
+
+* {
+    box-sizing:border-box;
+    font-family:Verdana,Arial;
+    font-size:100%;
+    margin:0; /*margin externa (fora da box)*/
+    padding:0; /*margin interna (fora da box)*/
+    border:0;
+    outline:none;
+    
+}
+/*todos os links sem underline*/
+a {text-decoration:none;  }
+
+ul {list-style:none;}
+
+img { max-width:100%;}
+
+body { background-color:white;}
+
+/* MOBILE FIRST */
+
+header {
+   width:100%;
+   float:left;
+   padding:2% 3%; /*margin interna (dentro da box)*/
+ 
+}
+
+ header h1 {
+     width:83px; /*largura*/
+     height:88px; /*altura*/
+     float:left; /*posicao esquerda*/
+     font-size:0px;
+     background-image:url("../Images/logo_mobile.fw.png");
+     background-repeat:no-repeat;
+     }
+
+
+ /* Configuração da Pagina de Instalação */
+#main {
+    width:100%;
+    float:left;
+    padding:2% 3%;
+}
+
+#main h2 {
+    font-size:1.6em;
+    font-weight:500;
+    text-align:center;
+    color:#333;
+    margin-top:10px;
+    }
+
+.form-instal {
+    width:100%;
+    float:left;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+ #main h3 {
+    font-size:1.2em;
+    font-weight:bold;
+    margin-bottom:5px;
+    color:#333;
+    text-align:center;
+    }
+ .form-login {
+    width:100%;
+    float:left;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+#main input {
+    border:solid 1px #ccc;
+    
+    width:100%;
+    padding-left:1%;
+    border-radius:5px;
+    height:35px;
+    margin-top:2%;
+    }
+.btn {
+  cursor:pointer;
+  background-color:rgba(000,000,000,0.7);
+  color:#fff;
+}
+/* configuração do menu principal */
+
+.menu_mobile {
+    width:54px;
+    color:white;
+    height:54px;
+    float:right;
+    border-radius:40px;
+    margin:2%;
+    cursor:pointer;
+    background-image:linear-gradient(to right,#B00014 40%,#333); 
+}
+
+.menu{
+    width:100%;
+    height:100%;
+    background-color:rgba(000,000,000,0.8);
+    position:fixed;
+    display:none; /*nao vai mostrar o menu*/
+    }
+
+.menu ul {
+    list-style:none; /* tira as bolas */
+    float:left;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    }
+
+.menu ul li {
+   /* display:inline; */  /*mostrar na horizontal*/
+    padding:1.5em;
+    }
+
+.menu ul li a {
+   text-decoration:none; /*decoracao do link*/
+   color:#fff; /*cor do texto*/
+   font-size:2.0em;
+   
+   padding:1.5% 3.0%;
+  
+   /* transicao das propriedades */
+   transition-property:all;
+   transition-duration:0.2s;
+    }
+
+.fechar {
+    font-size:3.0em;
+    color:white;
+    float:right;
+    margin-right:7%;
+}
+.fechar:hover {
+    color:yellow;
+    }
+
+/*hover -> estado ao passar o mouse */
+.menu ul li a:hover {
+    transition-property:all;
+    transition-duration:0.3s;
+    background-color:#b00014; /* cor de fundo */
+    color:white;
+    border-radius:5px; /*arredondar as bordas*/
+    }
+
+/*#id -> codigo identificador (primary key)*/
+#slide {
+    width:100%;
+    float:left;
+    height:500px;
+    background-image:url("../Images/banner.fw.png");
+    /*background-repeat:no-repeat;*/ 
+    padding:10px 30px;
+
+    animation:banner 10s infinite;
+    animation-direction:alternate;
+}
+
+@keyframes banner {
+
+    0%,30% {
+        background-image:url("../Images/banner.fw.png");
+    }
+     35%,65% {
+        background-image:url("../Images/banner2.fw.png");
+    }
+      70%,100% {
+        background-image:url("../Images/banner3.fw.png");
+    }
+
+}
+
+#slide p {
+    width:100%;
+    height:18%;
+    font-size:1.3em;
+    color:#333;
+    font-style:italic; /*estilo da fonte italico*/
+    border-bottom:solid 6px #EB6B0C; /*borda da base*/
+    }
+/*.class - classificacao (pode repetir foreign key)*/
+.blue {
+   color:#0064B8;
+}
+.orange { 
+   color:#EB6B0C;
+}
+/* classe do titulo dos planos */
+.tPlano {
+  font-weight:bold; /*negrito*/
+  font-size:1.5em; /*2 polegadas */
+  color:#333; /*cor do texto*/
+  width:100%; /*largura*/
+  float:left; /*posicionar esquerda (padrao)*/
+  text-align:center; 
+  padding:30px 20px;   
+}
+
+#planos {
+  float:left;
+  width:100%;
+  padding:10px 20px; 
+}
+.boxPlanos {
+   transition-property:all;
+   transition-duration:0.2s;
+   width:100%;
+   float:left;
+   background-color:white;
+   border-top:solid 10px #B20013;
+   box-shadow:5px 5px 2px #ccc; /*sombra*/
+   padding:1%;
+  
+   margin:2%;
+}
+/*formatando somente o elemento 4 (article)*/
+.boxPlanos:nth-child(4) {
+    margin-right:0px;
+    }
+
+.boxPlanos:hover {
+   transition-property:all;
+   transition-duration:0.3s;
+   background-color:white;
+   border-top:solid 10px #EF6C0F;
+   box-shadow:5px 5px 2px #888; /*sombra*/
+   
+}
+
+.boxPlanos h3 {
+    font-size:1.7em;
+    font-weight:bold;
+    margin-bottom:5px;
+    }
+.desc {
+   font-size:1.2em;
+   margin-bottom:25px;
+}
+
+.boxPlanos strong {
+    font-size:1.8em;
+    font-weight:bold;
+
+}
+.promo {
+    font-size:1.2em;
+    color:#333;
+}
+.promocao {
+   font-size:1.0em;
+   font-weight:600;
+   width:160px;
+   height:25px;
+   background-color:#FEE67C;
+   padding:1%;
+}
+.boxPlanos button {
+    transition-property:all;
+   transition-duration:0.1s;
+    cursor:pointer;
+    color:white;
+    font-size:1.8em;
+    margin-top:20px;
+    margin-bottom:25px;
+    width:95%;
+    height:46px;
+    background-color:#EF6C0F;
+    border:0px;
+    border-radius:5px;
+}
+.boxPlanos ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.boxPlanos ul li {
+    margin-bottom:15px;
+    font-size:1.1em;
+    }
+
+/*ao passar o mouse - :hover*/
+.boxPlanos button:hover {
+    transition-property:all;
+    transition-duration:0.2s;
+    background-color:#B20013;
+}
+
+#info {
+  float:left;
+  width:100%;
+  padding:10px 20px;
+  /*efeito de gradiente */
+  background-image:linear-gradient(to top,#fff,#eee);
+  margin-top:50px;
+}
+
+#info h2 {
+    font-size:1.6em;
+    font-weight:500;
+    text-align:center;
+    color:#333;
+    margin-top:10px;
+    }
+#info p {
+    font-size:1.2em;
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+    }
+
+#info ul {
+    width:100%;
+    padding:10px 20px;
+    float:left;
+    list-style-image:url("../Images/bullet.fw.png");
+    margin-left:8%;
+    margin-bottom:2%;
+}
+#info ul li {
+    margin-bottom:20px;
+    }
+
+#info ul li a {
+    color:#333;
+    text-decoration:none;
+    font-size:1.0em;
+    }
+
+#info ul li a:hover {
+    color:#000;
+    text-decoration:underline;
+    }
+
+#servicos {
+  float:left;
+  width:100%;
+  padding:10px 20px;
+}
+
+#servicos h2 {
+    font-size:1.8em;
+    font-weight:bold;
+    text-align:center;
+    color:#666;
+    margin-top:10px;
+    }
+.boxServicos {
+    padding:10px 20px;
+    width:100%;
+    float:left;
+    margin-left:2.5%;
+    margin-top:2%;
+    text-align:center;
+}
+
+.boxServicos figure figcaption h3 {
+    color:#313131;
+    font-size:1.3em;
+    margin-top:2%;
+    margin-bottom:2%;
+    }
+
+.boxServicos figure figcaption p {
+    color:#313131;
+    font-size:1.1em;
+    }
+.boxServicos figure img {
+    opacity:0.6;
+    cursor:pointer;
+    transition-property:all;
+    transition-duration:0.1s
+    }
+.boxServicos figure img:hover {
+    opacity:1.0;
+    transition-property:all;
+    transition-duration:0.2s
+    }
+
+footer {
+  float:left;
+  width:100%;
+  font-size:0.9em;
+  padding:10px 30px;
+  text-align:center;
+  color:white;
+  background-color:#b00014;
+}
+
+.rs {
+    width:100%;
+    margin-bottom:1%;
+}
+.rs a i {
+    color:#ccc;
+    }
+
+/* Media Types - Padroes de Midias */
+
+/* breakpoints -> pontos de codigos css na tela */
+
+/*smarthphone - pequeno*/
+@media screen and (min-width:320px){
+
+}
+/*smarthphone - maior*/
+@media screen and (min-width:480px) {
+
+}
+
+/*Tablets*/
+@media screen and (min-width:720px) {
+
+    #servicos h2 {
+    font-size:2.0em;
+    font-weight:bold;
+    text-align:center;
+    color:#666;
+    margin-top:10px;
+    }
+.boxServicos {
+    padding:10px 20px;
+    width:45%;
+    float:left;
+    margin-left:2.0%;
+    margin-top:2%;
+    text-align:center;
+}
+
+     header h1 {
+     width:299px; /*largura*/
+     height:99px; /*altura*/
+     float:left; /*posicao esquerda*/
+     font-size:0px;
+     background-image:url("../Images/logo.fw.png");
+     background-repeat:no-repeat;
+     }
+
+.tPlano {
+  font-weight:bold; /*negrito*/
+  font-size:1.8em; /*2 polegadas */
+  color:#333; /*cor do texto*/
+  width:100%; /*largura*/
+  float:left; /*posicionar esquerda (padrao)*/
+  text-align:center; 
+  padding:30px 20px;   
+}
+
+.boxPlanos {
+   transition-property:all;
+   transition-duration:0.2s;
+   width:45%;
+   float:left;
+   background-color:white;
+   border-top:solid 10px #B20013;
+   box-shadow:5px 5px 2px #ccc; /*sombra*/
+   padding:1%;
+   margin-right:2%;
+   margin-left:2%;
+}
+
+}
+/*PCs - menor*/
+@media screen and (min-width:960px) {
+
+}
+
+/*Screen large - monitores resolucao grande*/
+@media screen and (min-width:1280px) {
+
+.menu_mobile {
+    display:none;
+    }
+.fechar {
+   display:none;
+    }
+
+ .form-instal {
+    width:70%;
+    float:left;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+ #main h3 {
+    font-size:1.8em;
+    font-weight:bold;
+    margin-bottom:5px;
+    color:#333;
+    text-align:left;
+    }
+ .form-login {
+    width:28%;
+    float:right;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.form-login input {
+    border:solid 1px #ccc;
+    
+    width:100%;
+    padding-left:1%;
+    border-radius:5px;
+    height:35px;
+    margin-top:2%;
+    }
+
+   header h1 {
+     width:299px; /*largura*/
+     height:99px; /*altura*/
+     float:left; /*posicao esquerda*/
+     font-size:0px;
+     background-image:url("../Images/logo.fw.png");
+     background-repeat:no-repeat;
+     }
+
+/* configuração do menu principal */
+.menu {
+    float:right;
+    width:auto;
+    display:block !important;
+    position:static;
+    line-height:54px;
+    height:54px;
+    background:none;
+    }
+
+.menu ul {
+    list-style:none; /* tira as bolas */
+    margin:0px;
+    padding:0px;
+    }
+
+.menu ul li {
+    display:inline; /*mostrar na horizontal*/
+    }
+
+.menu ul li a {
+   text-decoration:none; /*decoracao do link*/
+   color:#535353; /*cor do texto*/
+   font-size:1.2em;
+   display:inline-block; /*bloco (box) */
+   padding:5px 10px;
+   font-weight:500; /*negrito*/
+
+   /* transicao das propriedades */
+   transition-property:all;
+   transition-duration:0.2s;
+    }
+
+/*hover -> estado ao passar o mouse */
+.menu ul li a:hover {
+    transition-property:all;
+    transition-duration:0.3s;
+    background-color:#b00014; /* cor de fundo */
+    color:white;
+    border-radius:5px; /*arredondar as bordas*/
+    }
+
+
+#slide p {
+    width:40%;
+    height:18%;
+    font-size:2.0em;
+    color:#333;
+    font-style:italic; /*estilo da fonte italico*/
+    border-bottom:solid 6px #EB6B0C; /*borda da base*/
+    }
+
+.tPlano {
+  font-weight:bold; /*negrito*/
+  font-size:2.0em; /*2 polegadas */
+  color:#333; /*cor do texto*/
+  width:100%; /*largura*/
+  float:left; /*posicionar esquerda (padrao)*/
+  text-align:center; 
+  padding:30px 20px;   
+}
+
+.boxPlanos {
+   transition-property:all;
+   transition-duration:0.2s;
+   width:21%;
+   float:left;
+   background-color:white;
+   border-top:solid 10px #B20013;
+   box-shadow:5px 5px 2px #ccc; /*sombra*/
+   padding:1%;
+   margin-right:2%;
+   margin-left:2%;
+}
+/*formatando somente o elemento 4 (article)*/
+.boxPlanos:nth-child(4) {
+    margin-right:0px;
+    }
+
+.boxPlanos h3 {
+    font-size:1.7em;
+    font-weight:bold;
+    margin-bottom:5px;
+    }
+.desc {
+   font-size:1.0em;
+   margin-bottom:25px;
+}
+
+.boxPlanos strong {
+    font-size:1.8em;
+    font-weight:bold;
+
+}
+.promo {
+    font-size:1.2em;
+    color:#333;
+}
+.promocao {
+   font-size:1.0em;
+   font-weight:600;
+   width:160px;
+   height:25px;
+   background-color:#FEE67C;
+   padding:1%;
+}
+.boxPlanos button {
+    transition-property:all;
+    transition-duration:0.1s;
+    cursor:pointer;
+    color:white;
+    font-size:1.8em;
+    margin-top:20px;
+    margin-bottom:25px;
+    width:95%;
+    height:46px;
+    background-color:#EF6C0F;
+    border:0px;
+    border-radius:5px;
+}
+
+.boxPlanos ul li {
+    margin-bottom:15px;
+    font-size:1.1em;
+    }
+
+#info h2 {
+    font-size:2.5em;
+    font-weight:500;
+    text-align:center;
+    color:#333;
+    margin-top:10px;
+    }
+#info p {
+    font-size:1.5em;
+    text-align:center;
+    color:#333;
+    margin-bottom:20px;
+    }
+
+#info ul {
+    width:40%;
+    padding:10px 20px;
+    float:left;
+    list-style-image:url("../Images/bullet.fw.png");
+    margin-left:8%;
+}
+#info ul li {
+    margin-bottom:20px;
+    }
+
+#info ul li a {
+    color:#333;
+    text-decoration:none;
+    font-size:1.3em;
+    }
+
+#servicos h2 {
+    font-size:2.4em;
+    font-weight:bold;
+    text-align:center;
+    color:#666;
+    margin-top:10px;
+    }
+.boxServicos {
+    padding:10px 20px;
+    width:30%;
+    float:left;
+    margin-left:2.5%;
+    margin-top:2%;
+    text-align:center;
+}
+
+.boxServicos figure figcaption h3 {
+    color:#313131;
+    font-size:1.3em;
+    margin-top:2%;
+    margin-bottom:2%;
+    }
+
+.boxServicos figure figcaption p {
+    color:#313131;
+    font-size:1.1em;
+    }
+
+
+}
+
+
+
+/* Versao para Impressao */
+@media print {
+#servicos h2 {
+    color:red;
+    }
+#info h2 {
+    color:red;
+    }
+
+.boxPlanos button {
+    background-color:#efefef;
+    color:black;
+    }
+}
+

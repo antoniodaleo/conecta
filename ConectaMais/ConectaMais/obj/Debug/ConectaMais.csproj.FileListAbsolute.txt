@@ -1,0 +1,16 @@
+c:\users\cepep\documents\visual studio 2012\Projects\ConectaMais\ConectaMais\bin\ConectaMais.dll
+c:\users\cepep\documents\visual studio 2012\Projects\ConectaMais\ConectaMais\bin\ConectaMais.pdb
+c:\users\cepep\documents\visual studio 2012\Projects\ConectaMais\ConectaMais\obj\Debug\ConectaMais.dll
+c:\users\cepep\documents\visual studio 2012\Projects\ConectaMais\ConectaMais\obj\Debug\ConectaMais.pdb
+C:\Users\cepep\documents\visual studio 2012\Projects\ConectaMais\ConectaMais\obj\Debug\ConectaMais.csprojResolveAssemblyReference.cache
+C:\Users\antonio\Desktop\Prof Jones\ConectaMais\ConectaMais\bin\ConectaMais.dll
+C:\Users\antonio\Desktop\Prof Jones\ConectaMais\ConectaMais\bin\ConectaMais.pdb
+C:\Users\antonio\Desktop\Prof Jones\ConectaMais\ConectaMais\obj\Debug\ConectaMais.csprojResolveAssemblyReference.cache
+C:\Users\antonio\Desktop\Prof Jones\ConectaMais\ConectaMais\obj\Debug\ConectaMais.dll
+C:\Users\antonio\Desktop\Prof Jones\ConectaMais\ConectaMais\obj\Debug\ConectaMais.pdb
+C:\Users\antonio\Documents\Siti_Html5_CSS3_Responsive\Prof Jones\ConectaMais\ConectaMais\bin\ConectaMais.dll.config
+C:\Users\antonio\Documents\Siti_Html5_CSS3_Responsive\Prof Jones\ConectaMais\ConectaMais\bin\ConectaMais.dll
+C:\Users\antonio\Documents\Siti_Html5_CSS3_Responsive\Prof Jones\ConectaMais\ConectaMais\bin\ConectaMais.pdb
+C:\Users\antonio\Documents\Siti_Html5_CSS3_Responsive\Prof Jones\ConectaMais\ConectaMais\obj\Debug\ConectaMais.csprojResolveAssemblyReference.cache
+C:\Users\antonio\Documents\Siti_Html5_CSS3_Responsive\Prof Jones\ConectaMais\ConectaMais\obj\Debug\ConectaMais.dll
+C:\Users\antonio\Documents\Siti_Html5_CSS3_Responsive\Prof Jones\ConectaMais\ConectaMais\obj\Debug\ConectaMais.pdb
